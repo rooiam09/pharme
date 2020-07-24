@@ -1,0 +1,102 @@
+/* Add a black background color to the top navigation */
+<style>
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  font-color: white;
+  font-family: cursive;
+  height: 60px;
+  font-size: 150%;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  left: 34%;
+  margin: 10px;
+  max-width: 400px;
+  padding: 16px;
+  background: url(../assets/images/bckimg1.jpg);
+  font-weight: bolder;
+  border-style: solid;
+  border-size: 1px;
+  
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 111px solid red; /* Gray border */
+  border-radius: 44px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/*body *//* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 5px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  
+  padding: 16px 20px;
+  border: 1px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+</style>
